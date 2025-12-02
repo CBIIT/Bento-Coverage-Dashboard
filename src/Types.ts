@@ -8,13 +8,15 @@ export interface CoverageMetrics {
 export interface ProjectInfo {
   id?: string;
   parentProject?: string;
+  language?: string,
+  framework?: string,
   projectName: string;
-  coerageReportLink: string;
+  coverageReportLink: string;
 }
 
 export interface ProjectCoverage {
   projectInfo: ProjectInfo;
-  coverage: CoverageMetrics;
+  coverage?: CoverageMetrics;
   total?: any;
 }
 
