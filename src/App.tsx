@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Container, Typography, Box, Grid, Divider } from '@mui/material';
 import { CoverageMetrics, ProjectCoverage, ProjectInfo } from './Types';
-import { ProjectsConfig } from './config/projects';
+import { ProjectsConfig } from './config/Projects';
 import ProjectCoverageCard from './components/ProjectCoverageCard';
 import { parseJacocoXml } from './utils/Java';
 
